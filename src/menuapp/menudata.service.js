@@ -10,7 +10,8 @@ function MenuDataService(ApiBasePath, $http) {
   var service = this;
 
   service.getAllCategories = function() {
-    var response = $http({method: "GET", url: ApiBasePath + "categories.json"});
+    var categories = $http({method: "GET", url: ApiBasePath + "categories.json"});
+    return categories;
   };
 
   service.getItemsForCategory = function(categoryShortName) {
