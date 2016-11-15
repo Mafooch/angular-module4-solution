@@ -1,8 +1,9 @@
 (function() {
 "use strict";
 
-angular("MenuApp")
+angular.module("MenuApp")
 .component("items", {
+  templateUrl: "src/menuapp/templates/items.template.html",
   bindings: {
     // one way binding
     items: "<"
